@@ -2,7 +2,8 @@
             overflow-y: scroll;
         }
         body {
-            font-family: sans-serif;
+            font-family: 'Poppins', sans-serif; /* This switches the font for the whole page */
+                /* Keep your existing margin/padding rules here */
             max-width: 800px;
             margin: 0 auto;
         }
