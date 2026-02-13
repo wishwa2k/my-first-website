@@ -17,23 +17,34 @@
         p {
             color: blue;
         }
-        .highlight {
-            background-color: yellow;
+
+        .contact-section {
+            max-width: 600px;      /* Restricts the width so it doesn't look stretched */
+            margin: 50px auto;     /* Centers the box horizontally */
             padding: 20px;
-            border: 4px solid black;
-            border-radius: 10px;
+            text-align: center;
         }
+      
         button {
-            background-color: blue;
+            background-color: #333;
             color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;       /* Shows the hand icon when hovering */
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #555; /* Darker shade on hover */
         }
         input, textarea {
             width: 100%;
-            padding: 10px;
+            padding: 12px;      /* Adds comfortable space for typing */
             margin-bottom: 15px;
-            box-sizing: border-box;
+            border: 1px solid #ccc; /* Light grey border */
+            border-radius: 4px; /* Slightly rounded corners */
+            box-sizing: border-box; /* Ensures padding doesn't break the width */
         }
         nav a{
             text-decoration: none;
@@ -49,16 +60,73 @@
             text-align: center;
             margin-top: 50px;
             border-top: 1px solid #ccc;
-            padding-top: 20px;
-            font-size: 0.8em;
+            background-color: #333;
+            padding: 20px;
        }
+       
        footer p {
             color: #777;
        }
+
+       .social-links {
+            margin-top: 10px;
+       }
+       
+       .social-links a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;  /* Removes the underline */
+        font-weight: bold;
+
+       }
+
+         .social-links a:hover {
+          color: #ddd;  /* Lighter shade on hover */
+          text-decoration: underline; /* Adds an underline on hover */
+         }
+
        .avatar {
             width: 150px;
             border-radius: 50%;
             border: 5px solid white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
        }
+
+       .Hero {
+        text-align:center;
+        padding:40px;
+        background-color:#f9f9f9;
+        margin-bottom: 20px;
+       }
+
+       .skills ul {
+        list-style: none;   /* Removes the bullet points */
+        padding: 0;     /* Removes the default indentation */
+        text-align: center;
+       }
+
+       .skills li {
+        display: inline-block;  /* Allows them to sit side-by-side */
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 25px;
+       }
+
+       .project-card {
+        border: 1px solid #ddd;      /* A thin grey outline */
+        padding: 20px;               /* Breathing room inside the box */
+        margin: 20px auto;           /* Spacing outside (auto centers it) */
+        border-radius: 8px;          /* Rounds the corners slightly */
+        max-width: 600px;            /* Keeps the cards from getting too wide */
+        background-color: #fff;      /* Ensures the background is clean white */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle 3D pop */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);  /* Moves the card UP by 10 pixels */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Enhances the shadow on hover */
+        }
     
